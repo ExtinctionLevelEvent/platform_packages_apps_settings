@@ -33,8 +33,21 @@
     <!-- LED Flashlight -->
     <bool name="has_led_flash">false</bool>
 
+<<<<<<< HEAD
+=======
+    <!-- Volume Rocker Wake Support. Some devices do not support (PMU) this.
+         Setting to false will disable Volume Rocker Wake support -->
+    <bool name="config_show_volumeRockerWake">true</bool>
+
+    <!-- Whether can use fast chage -->
+    <bool name="has_fast_charge">true</bool>
+
+    <!-- Whether can use color tuning -->
+    <bool name="has_color_tuning">true</bool>
+
     <!-- Show Expanded Desktop preference -->
     <bool name="config_show_expandedDesktop">false</bool>
 
+>>>>>>> e5a585d... Settings: Forward port Expanded desktop capability
     <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>
