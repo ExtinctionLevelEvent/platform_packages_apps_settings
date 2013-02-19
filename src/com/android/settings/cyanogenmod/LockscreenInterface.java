@@ -49,6 +49,8 @@ import com.android.settings.Utils;
 import com.android.settings.SettingsPreferenceFragment;
 import com.android.settings.notificationlight.ColorPickerView;
 
+import net.margaritov.preference.colorpicker.ColorPickerPreference;
+
 import java.util.regex.Matcher;
 import java.util.regex.Pattern;
 
@@ -67,6 +69,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private static final String KEY_LOCKSCREEN_MAXIMIZE_WIDGETS = "lockscreen_maximize_widgets";
     private static final String PREF_LOCKSCREEN_USE_CAROUSEL = "lockscreen_use_widget_container_carousel";
     private static final String KEY_BACKGROUND_PREF = "lockscreen_background";
+    private static final String PREF_LOCKSCREEN_AUTO_ROTATE = "lockscreen_auto_rotate";
 
     private CheckBoxPreference mSeeThrough;
     private ListPreference mCustomBackground;
@@ -75,6 +78,7 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
     private File mWallpaperImage;
     private File mWallpaperTemporary;
     private CheckBoxPreference mLockscreenUseCarousel;
+    private CheckBoxPreference mLockscreenAutoRotate;
 
     private Context mContext;
 
@@ -108,6 +112,10 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
         } else {
             mMaximizeWidgets.setOnPreferenceChangeListener(this);
         }
+
+        mLockscreenAutoRotate = (CheckBoxPreference)findPreference(PREF_LOCKSCREEN_AUTO_ROTATE);
+        mLockscreenAutoRotate.setChecked(Settings.System.getBoolean(mContext.getContentResolver(),
+                Settings.System.LOCKSCREEN_AUTO_ROTATE, false));
 
         mLockscreenUseCarousel = (CheckBoxPreference)findPreference(PREF_LOCKSCREEN_USE_CAROUSEL);
         mLockscreenUseCarousel.setChecked(Settings.System.getBoolean(getActivity().getContentResolver(),
@@ -167,6 +175,11 @@ public class LockscreenInterface extends SettingsPreferenceFragment implements
             Settings.System.putInt(getActivity().getContentResolver(),
                     Settings.System.LOCKSCREEN_USE_WIDGET_CONTAINER_CAROUSEL,
                     ((CheckBoxPreference)preference).isChecked() ? 1 : 0);
+            return true;
+        } else if (preference == mLockscreenAutoRotate) {
+            Settings.System.putBoolean(mContext.getContentResolver(),
+                Settings.System.LOCKSCREEN_AUTO_ROTATE,
+                ((CheckBoxPreference) preference).isChecked());
             return true;
         }
         return super.onPreferenceTreeClick(preferenceScreen, preference);
