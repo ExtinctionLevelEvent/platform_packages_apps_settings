@@ -19,18 +19,28 @@
     android:title="@string/system_interface_title"
     xmlns:settings="http://schemas.android.com/apk/res/com.android.settings">
 
+  <PreferenceScreen
+        android:key="pie_control"
+        android:fragment="com.android.settings.paranoid.Pie"
+        android:title="@string/pie_controls_title"
+        android:summary="@string/pie_controls_summary" />
+
     <PreferenceScreen
         android:key="notification_drawer"
         android:fragment="com.android.settings.cyanogenmod.PowerWidget"
-        android:title="@string/notification_drawer_title" />
+        android:title="@string/notification_drawer_title"
+        android:summary="@string/notification_drawer_summary" />
 
     <PreferenceScreen
         android:key="notification_pulse"
         android:title="@string/notification_pulse_title"
-        android:fragment="com.android.settings.notificationlight.NotificationLightSettings" />
+        android:fragment="com.android.settings.notificationlight.NotificationLightSettings"
+        android:summary="@string/notification_pulse_summary" />
 
     <PreferenceScreen
         android:key="battery_light"
         android:title="@string/battery_light_title"
-        android:fragment="com.android.settings.notificationlight.BatteryLightSettings" />
+        android:fragment="com.android.settings.notificationlight.BatteryLightSettings"
+        android:summary="@string/battery_light_summary" />
+
 </PreferenceScreen>

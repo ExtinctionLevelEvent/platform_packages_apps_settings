@@ -1500,6 +1500,10 @@
 
         <activity android:name=".cyanogenmod.StatusBar" />
 
+        <activity android:name=".paranoid.Pie" />
+
+        <activity android:name=".paranoid.PieColor" />
+
         <activity android:name=".profiles.NFCProfile"
                 android:theme="@android:style/Theme.NoDisplay">
             <intent-filter>

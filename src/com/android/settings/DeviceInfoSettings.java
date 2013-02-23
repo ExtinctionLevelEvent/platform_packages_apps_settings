@@ -93,7 +93,7 @@ public class DeviceInfoSettings extends SettingsPreferenceFragment {
         setStringSummary(KEY_BUILD_NUMBER, Build.DISPLAY);
         findPreference(KEY_BUILD_NUMBER).setEnabled(true);
         findPreference(KEY_KERNEL_VERSION).setSummary(getFormattedKernelVersion());
-        setValueSummary(KEY_MOD_VERSION, "ro.killrom.version");
+        setValueSummary(KEY_MOD_VERSION, "ro.ele.version");
         setValueSummary(KEY_MOD_BUILD_DATE, "ro.build.date");
 
         if (!SELinux.isSELinuxEnabled()) {

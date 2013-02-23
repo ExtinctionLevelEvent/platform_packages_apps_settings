@@ -34,26 +34,26 @@
 
     <!-- Device Info --> <skip />
     <!-- Device Info screen. Used for a status item's value when the proper value is not known -->
-    <string name="device_info_default">Unknown</string>
+    <string name="device_info_default">Vengeance</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Countdown for user taps to enable development settings -->
     <plurals name="show_dev_countdown">
-        <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from being a developer.</item>
-        <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from being a developer.</item>
+        <item quantity="one">You are now <xliff:g id="step_count">%1$d</xliff:g> step away from being beaten to a pulp.</item>
+        <item quantity="other">You are now <xliff:g id="step_count">%1$d</xliff:g> steps away from being beaten to a pulp.</item>
     </plurals>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Confirmation that developer settings are enabled -->
-    <string name="show_dev_on">Additional ROM Options now available</string>
+    <string name="show_dev_on">You are NOT Batman! But you can now pretend</string>
     <!-- [CHAR LIMIT=NONE] Device Info screen. Okay we get it, stop pressing, you already have it on -->
-    <string name="show_dev_already">You already have these options.</string>
+    <string name="show_dev_already">Nice try but you are still not Batman.</string>
 
     <!-- Category headings in left-pane header menu --> <skip />
     <!-- Settings main menu category heading. Wireless and networks (Wi-Fi, Bluetooth, data usage...). [CHAR LIMIT=40] -->
-    <string name="header_category_wireless_networks">E.L.E CONNECTION OPTIONS</string>
+    <string name="header_category_wireless_networks">WIRELESS &amp; NETWORKS</string>
     <!-- Settings main menu category heading. Device (Sound, display, battery, applications...). [CHAR LIMIT=40] -->
-    <string name="header_category_device">E.L.E DEVICE OPTIONS</string>
+    <string name="header_category_device">DEVICE</string>
     <!-- Settings main menu category heading. Personal (Accounts, security, language, backup...). [CHAR LIMIT=40] -->
-    <string name="header_category_personal">PERSONAL E.L.E OPTIONS</string>
+    <string name="header_category_personal">PERSONAL</string>
     <!-- Settings main menu category heading. System (Updates, data, accessibility, about phone). [CHAR LIMIT=40] -->
-    <string name="header_category_system">E.L.E SYSTEM OPTIONS</string>
+    <string name="header_category_system">SYSTEM</string>
 
     <!-- Phone info -->
     <!-- Phone Info screen. Button label to turn on the radio . Only shown in diagnostic screen, so precise translation is not needed. -->
@@ -1661,7 +1661,7 @@
     <!-- Sound settings screen, volume title -->
     <string name="all_volume_title">Volumes</string>
     <!-- Sound settings screen, music effects title [CHAR LIMIT=30]-->
-    <string name="musicfx_title">DSP Sound Manager</string>
+    <string name="musicfx_title">Music effects</string>
     <!-- Sound settings screen, setting option name -->
     <string name="ring_volume_title">Ringer volume</string>
     <!-- Sound settings screen, setting option name checkbox -->
@@ -1878,7 +1878,7 @@
     <!-- About phone screen,  setting option name-->
     <string name="kernel_version">Kernel Version</string>
     <!-- About phone screen,  setting option name-->
-    <string name="build_number">Build Details</string>
+    <string name="build_number">Compiled Build</string>
     <!-- About phone screen,  setting option name-->
     <string name="selinux_status">SELinux status</string>
 
@@ -4391,33 +4391,33 @@
 
     <!-- MODIFIER Settings  -->
     <!-- Settings main menu category heading. Interface (Launcher, Profiles, System). [CHAR LIMIT=40] -->
-    <string name="header_category_interface">EXTICTION LEVEL EVENT OPTIONS</string>
+    <string name="header_category_interface">TDKRom MODIFIERS</string>
 
-    <!-- E.L.EHome settings  -->
-    <string name="launcher_settings_title">ELE Launcher</string>
-    <string name="header_summary_home">Setup Your Launcher</string>
+    <!-- KILLRHome settings  -->
+    <string name="launcher_settings_title">Batcave</string>
+    <string name="header_summary_home">Launcher Mods</string>
 
-    <!-- E.L.E EDITS START -->
+    <!-- KILLROM EDITS START -->
 
     <!-- Themes settings  -->
     <string name="themes_settings_title">Theme Chooser</string>
-    <string name="header_summary_themes">Select Additional Themes</string>
+    <string name="header_summary_themes">Get Your Theme On</string>
 
     <string name="ok">OK</string>
 
-    <!-- Smart hours -->
-    <string name="header_quiet_hours">Smart Hours</string>
-    <string name="quiet_hours_title">Setup Your Devices Behavior</string>
+    <!-- Quiet hours -->
+    <string name="header_quiet_hours">Quiet Hours</string>
+    <string name="quiet_hours_title">Quiet Hours Setup</string>
     <string name="quiet_hours_summary">Configure the hours the device should be quiet</string>
     <string name="quiet_hours_note_title">Note</string>
-    <string name="quiet_hours_note_summary">Incoming calls will behave like usual during smart hours</string>
-    <string name="quiet_hours_enabled">Enable Smart hours</string>
-    <string name="quiet_hours_enabled_on">Smart hours will be enforced</string>
+    <string name="quiet_hours_note_summary">Incoming calls will behave like usual during quiet hours</string>
+    <string name="quiet_hours_enabled">Enable quiet hours</string>
+    <string name="quiet_hours_enabled_on">Quiet hours will be enforced</string>
     <string name="quiet_hours_enabled_off">Notifications will function as normal</string>
-    <string name="quiet_hours_start">Start of smart hours</string>
-    <string name="quiet_hours_start_summary">When to start enforcing smart hours</string>
-    <string name="quiet_hours_end">End of smart hours</string>
-    <string name="quiet_hours_end_summary">When to stop enforcing smart hours</string>
+    <string name="quiet_hours_start">Start of quiet hours</string>
+    <string name="quiet_hours_start_summary">When to start enforcing quiet hours</string>
+    <string name="quiet_hours_end">End of quiet hours</string>
+    <string name="quiet_hours_end_summary">When to stop enforcing quiet hours</string>
     <string name="quiet_hours_mute">Mute notifications</string>
     <string name="quiet_hours_mute_on">No sounds will be played</string>
     <string name="quiet_hours_mute_off">Sounds will play like normal</string>
@@ -4442,19 +4442,19 @@
     <string name="notification_convert_sound_to_vibration_summary">In vibrate mode, all notifications will vibrate regardless of individual app settings</string>
 
     <!-- About phone screen,  setting option name-->
-    <string name="mod_version">E.L.E Device</string>
+    <string name="mod_version">TDKRom Version</string>
     <string name="mod_version_default">Unknown</string>
     <!-- About phone screen, build date of ROM -->
-    <string name="build_date">Event Date</string>
+    <string name="build_date">Date Of Crime</string>
     <string name="build_date_default">2012-01-01-0000</string>
     <!-- About device screen, Cpu info. -->
-    <string name="cpu_info">Processor</string>
+    <string name="cpu_info">CPU</string>
     <!-- About phone screen, Free memory info -->
     <string name="mem_info">Memory</string>
     <!-- About phone screen, status item label -->
 
-    <string name="lock_screen_title">LockScreen Options</string>
-    <string name="header_summary_lockscreen">Setup Your LockScreen</string>
+    <string name="lock_screen_title">Lock Screen Mods</string>
+    <string name="header_summary_lockscreen">Lock Screen Options</string>
 
     <!-- Lock Screen Shortcuts -->
     <string name="lockscreen_target_info">Drag the slider to targets to assign shortcuts</string>
@@ -4469,13 +4469,12 @@
     <string name="lockscreen_target_edit_msg">Select or change the desired application or activity and the associated icon</string>
 
     <!-- System Interface settings  -->
-    <string name="system_settings_title">PieControl And LED Options</string>
-    <string name="header_summary_system_settings">Personalize Pie and LED Settings</string>
-    <string name="system_interface_title">User Interface</string>
+    <string name="system_settings_title">Extended UI Mods</string>
+    <string name="header_summary_system_settings">Tweak Everything</string>
+    <string name="system_interface_title">UI Mod Interface</string>
 
     <!-- Notification Drawer  -->
-    <string name="notification_drawer_title">ToggleBar Options</string>
-    <string name="notification_drawer_summary">Setup Alternate ToggleBar</string>
+    <string name="notification_drawer_title">Toggle Options</string>
 
     <!-- Lock screen misc. settings -->
     <string name="lockscreen_battery_status_title">Battery status</string>
@@ -4483,8 +4482,8 @@
     <string name="lockscreen_battery_status_alwayson">Always on</string>
 
     <!-- Profiles settings  -->
-    <string name="profiles_settings_title">Smart UserProfiles</string>
-    <string name="header_summary_profiles">Setup Your UserProfiles</string>
+    <string name="profiles_settings_title">Smart Profiles</string>
+    <string name="header_summary_profiles">Setup Profiles</string>
     <string name="profiles_general_title">General</string>
     <string name="profiles_add">Add</string>
     <string name="profile_menu_delete">Delete</string>
@@ -4545,8 +4544,8 @@
     <string name="choose_ringtone">Choose ringtone</string>
 
     <!-- Pie controls -->
-    <string name="pie_controls_title">Pie control options</string>
-    <string name="pie_controls_summary">Settings for PieControl</string>
+    <string name="pie_controls_title">Pie controls</string>
+    <string name="pie_controls_summary">Allows navigation and status report on expanded desktop mode</string>
     <string name="pie_gravity_title">Pie gravity</string>
     <string name="pie_gravity_summary">Select the location where Pie will be placed at</string>
     <string name="pie_gravity_top">Top</string>
@@ -4584,8 +4583,7 @@
     <string name="pie_gap_huge">Huge</string>
     <string name="pie_trigger_title">Trigger size</string>
     <string name="pie_trigger_summary">Determine the size of the triggering area that will start pie controls</string>
-    <string name="pie_trigger_small">Small</string>
-    <string name="pie_trigger_normal">Normal (Default)</string>
+    <string name="pie_trigger_small">Small (Default)</string>
     <string name="pie_trigger_big">Big</string>
     <string name="pie_trigger_huge">Huge</string>
     <string name="pie_notifications_title">Enable Chevron Targets</string>
@@ -4594,10 +4592,18 @@
     <string name="pie_menu_summary">Whether or not the menu button will appear when unneeded</string>
     <string name="pie_search_title">Show search button</string>
     <string name="pie_search_summary">Access to GoogleNow via Pie</string>
-    <string name="pie_center_title">Center pie</string>
-    <string name="pie_center_summary">If un-checked, pie appears where your fingers triggers it</string>
     <string name="all_color">Custom Colors</string>
     <string name="stock_color">Default Colors</string>
+
+    <!-- Color Picker -->
+    <string name="dialog_color_picker">Color Picker</string>
+    <string name="press_color_to_apply">Press on Color to apply</string>
+    <string name="arrow_right">→</string>
+    <string name="arrow_down">↓</string>
+    <string name="hex">Hex:</string>
+    <string name="hex_hint">#FF000000</string>
+    <string name="set">Set</string>
+    <string name="ics_color">!!!</string>
 
     <!-- Sound settings screen, setting option name to pick ringtone (a list dialog comes up)-->
     <string name="soundtone_title">Notification tone</string>
@@ -4712,8 +4718,7 @@
     <string name="link_volume_mutes">Silent mode affects notifications</string>
 
     <!-- Display settings screen, notification light settings -->
-    <string name="notification_pulse_title">LED Options</string>
-    <string name="notification_pulse_summary">Personalize Your LED</string>
+    <string name="notification_pulse_title">LED Modifier</string>
     <string name="notification_light_general_title">General</string>
     <string name="notification_light_applist_title">Applications</string>
     <string name="notification_light_phonelist_title">Phone</string>
@@ -4751,7 +4756,6 @@
 
     <!-- Battery light settings  -->
     <string name="battery_light_title">Battery light</string>
-    <string name="battery_light_summary">Setup Battery Light Behavior</string>
     <string name="battery_low_pulse_title">Pulse if battery low</string>
     <string name="battery_light_list_title">Colors</string>
     <string name="battery_light_low_color_title">Battery low</string>
@@ -4790,8 +4794,8 @@
     <string name="hardware_keys_action_voice_search">Voice search</string>
     <string name="hardware_keys_action_in_app_search">In-app search</string>
 
-    <!-- Legacy Toggles  -->
-    <string name="power_widget_title">Status Bar QuickToggles</string>
+    <!-- Power Widget  -->
+    <string name="power_widget_title">Status Bar Toggles</string>
     <string name="title_expanded_widget">Toggles</string>
     <string name="power_widget_behavior">Widget behavior</string>
     <string name="title_expanded_hide_onchange">Close drawer on change</string>
@@ -4844,18 +4848,25 @@
 
     <!-- Power menu enable disable -->
     <string name="header_power_menu">Setup Power Menu</string>
-    <string name="power_menu_title">Power Menu Options</string>
+    <string name="power_menu_title">Power Menu Mods</string>
     <string name="power_menu_reboot_title">Reboot menu</string>
     <string name="power_menu_screenshot_title">Screenshot</string>
+    <string name="power_menu_expanded_desktop">Expanded desktop</string>
+    <string name="summary_expanded_desktop">%1$s</string>
+    <string name="expanded_desktop_summary_status_bar">With status bar</string>
+    <string name="expanded_desktop_summary_no_status_bar">Without status bar</string>
+    <string name="expanded_desktop_disabled">Off</string>
+    <string name="expanded_desktop_staus_bar">With status bar</string>
+    <string name="expanded_desktop_no_staus_bar">Without status bar</string>
     <string name="power_menu_profiles_title">Profile switcher</string>
     <string name="power_menu_airplane_title">Airplane mode</string>
     <string name="power_menu_user_title">User switcher</string>
     <string name="power_menu_sound_title">Sound panel</string>
     <string name="title_show_navbar_hide">Show navigation bar toggle</string>
 
-    <!-- QuickTiles  -->
-    <string name="quick_settings_panel_title">QuickTiles Options</string>
-    <string name="quick_settings_title">Setup Your QuickTiles</string>
+    <!-- Quick settings panel  -->
+    <string name="quick_settings_panel_title">Quick Settings</string>
+    <string name="quick_settings_title">Quick Settings Tiles</string>
     <string name="title_static_tiles">Static tiles</string>
     <string name="tile_picker_title">Tiles and layout</string>
     <string name="tile_picker_summary">View, select or change the layout of the displayed tiles</string>
@@ -4867,7 +4878,7 @@
     <string name="title_tile_brightness">Brightness</string>
     <string name="title_tile_sleep">Go to sleep</string>
     <string name="title_tile_gps">GPS</string>
-    <string name="title_tile_torch">LED Light</string>
+    <string name="title_tile_torch">Torch</string>
     <string name="title_tile_lockscreen">Lock screen</string>
     <string name="title_tile_lte">LTE</string>
     <string name="title_tile_mobiledata">Mobile data</string>
@@ -4916,7 +4927,7 @@
     <string name="ime_switcher_notify_summary">Display input method selector notification</string>
 
     <!-- Status bar  -->
-    <string name="status_bar_title">Status Bar Settings</string>
+    <string name="status_bar_title">Status Bar Mods</string>
     <string name="status_bar_clock_title">Clock</string>
     <string name="status_bar_general_title">General</string>
     <string name="status_bar_clock_style_title">Clock style</string>
@@ -4936,17 +4947,17 @@
     <string name="status_bar_notif_count_summary">Display number of pending notifications</string>
 
     <!--- Lock clock -->
-    <string name="lock_clock_title">LockClock Widget</string>
-    <string name="lock_clock_summary">View or change how the \'cLock\' Home and Lock screen widgets will display</string>
+    <string name="lock_clock_title">Clock widget</string>
+    <string name="lock_clock_summary">View or change how the \'Chronus\' Home and Lock screen widgets will display</string>
 
     <string name="lockscreen_maximize_widgets_title">Maximize widgets</string>
     <string name="lockscreen_maximize_widgets_summary">Show widgets maximized and the unlock mimimized when the screen is turned on</string>
 
-    <!-- **** E.L.E ADDITIONS END **** -->
+    <!-- **** KILLROM ADDITIONS END **** -->
 
     <string name="title_statusbar_battery">Statusbar Battery</string>
-    <string name="header_summary_battery">Alternate Battery Options</string>
-    <string name="battery">Battery Options</string>
+    <string name="header_summary_battery">Battery Styles</string>
+    <string name="battery">Battery Mods</string>
     <string name="app_name">Settings</string>
 
     <!-- Statusbar | Battery -->
@@ -4968,7 +4979,7 @@
     <string name="icon_with_text">Stock with Offset Percent</string>
     <string name="icon_with_centered_text">Stock with Centered Percent</string>
     <string name="circlemod">Circle Gear</string>
-    <string name="stub">Stub Percent</string>
+    <string name="stub">KillrStub</string>
 
     <!-- Color Picker -->
     <string name="dialog_color_picker">Color Picker</string>
@@ -4981,8 +4992,8 @@
     <string name="ics_color">Holo</string>
 
     <!-- Navigation Bar -->
-    <string name="title_navbar">NavBar Options</string>
-    <string name="header_summary_navbar">Personalize Your NavBar</string>
+    <string name="title_navbar">NavBar Modifier</string>
+    <string name="header_summary_navbar">Setup NavBar</string>
     <string name="navigation_bar">Navigation bar</string>
     <string name="navbar_button_cat">Navigation bar buttons</string>
     <string name="title_pref_menu_display">Menu location</string>
@@ -5144,9 +5155,9 @@
     <string name="select_custom_app_title">Select custom application</string>
     <string name="group_applications">Applications</string>
 
-    <!-- Kernel Events -->
-    <string name="header_summary_speeddemon">Modify Your Kernel</string>
-    <string name="speeddemon_title">CPU/Kernel</string>
+    <!-- Speed Demon -->
+    <string name="header_summary_speeddemon">Get Demonic with your speed</string>
+    <string name="speeddemon_title">Speed Demon</string>
 
     <!-- Status Bar -->
     <string name="header_summary_status_bar">Status Bar Options</string>
@@ -5159,21 +5170,5 @@
     <string name="see_through_title">Transparent lockscreen</string>
     <string name="see_through_summary">Allows visibility of the application or home screen behind the lock screen.</string>
 
-    <!-- E.L.E Summaries -->
-<string name="header_summary_wifi">Manage WiFi</string>
-<string name="header_summary_bt">Manage Bluetooth</string>
-<string name="header_summary_data">Manage Carrier Data</string>
-<string name="header_summary_sound">Personalize Sound Settings</string>
-<string name="header_summary_display">Setup Display</string>
-<string name="header_summary_storage">Internal Device Info</string>
-<string name="header_summary_stats">Device Battery Stats</string>
-<string name="header_summary_apps">Manage Installed Apps</string>
-<string name="header_summary_location">Choose Location Options</string>
-<string name="header_summary_lang">Keyboard And Language Options</string>
-<string name="header_summary_reset">Device Wipe And Backup</string>
-<string name="header_summary_security">Device Security</string>
-<string name="header_summary_date">Global Timezone Settings</string>
-<string name="header_summary_access">Enable Accessibility Options</string>
-<string name="header_summary_info">Detailed Device Info</string>
-
+    <!-- **** CYANOGENMOD ADDITIONS END **** -->
 </resources>
