@@ -26,6 +26,14 @@
         android:entryValues="@array/lockscreen_battery_status_values"
         android:defaultValue="0" />
 
+     <ListPreference
+	android:key="lockscreen_background"
+        android:persistent="false"
+        android:dialogTitle="@string/lockscreen_custom_background_title"
+        android:title="@string/lockscreen_custom_background_title"
+        android:entries="@array/lockscreen_background_entries"
+        android:entryValues="@array/lockscreen_background_values"/>
+
      <CheckBoxPreference
         android:key="lockscreen_maximize_widgets"
         android:persistent="false"
@@ -37,6 +45,11 @@
         android:key="lockscreen_targets"
         android:summary="@string/lockscreen_target_summary"
         android:title="@string/lockscreen_target_title" />
+
+     <CheckBoxPreference
+        android:key="lockscreen_use_widget_container_carousel"
+        android:title="@string/lockscreen_use_widget_container_carousel_title"
+        android:summary="@string/lockscreen_use_widget_container_carousel_summary" />
 
     <CheckBoxPreference
         android:key="see_through"
