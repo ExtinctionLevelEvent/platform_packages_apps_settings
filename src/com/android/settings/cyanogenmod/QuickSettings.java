@@ -93,11 +93,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
     public void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         addPreferencesFromResource(R.xml.quick_settings_panel_settings);
-//    }
-//
-//    @Override
-//    public void onActivityCreated(Bundle savedInstanceState) {
-//        super.onActivityCreated(savedInstanceState);
+    }
+
+    @Override
+    public void onActivityCreated(Bundle savedInstanceState) {
+        super.onActivityCreated(savedInstanceState);
 
         PreferenceScreen prefSet = getPreferenceScreen();
         PackageManager pm = getPackageManager();
@@ -150,16 +150,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
         mDynamicIme = (CheckBoxPreference) prefSet.findPreference(DYNAMIC_IME);
         mDynamicIme.setChecked(Settings.System.getInt(resolver, Settings.System.QS_DYNAMIC_IME, 1) == 1);
         mDynamicUsbTether = (CheckBoxPreference) prefSet.findPreference(DYNAMIC_USBTETHER);
-        mDynamicUsbTether.setChecked(Settings.System.getInt(resolver, Settings.System.QS_DYNAMIC_USBTETHER, 1) == 1);
-        mDynamicWifi = (CheckBoxPreference) prefSet.findPreference(DYNAMIC_WIFI);
-        mDynamicWifi.setChecked(Settings.System.getInt(resolver, Settings.System.QS_DYNAMIC_WIFI, 1) == 1);
-
-        if (!deviceSupportsUsbTether()) {
-            mDynamicTiles.removePreference(mDynamicUsbTether);
-        }
-
-        if (!deviceSupportsWifiDisplay()) {
-            mDynamicTiles.removePreference(mDynamicWifi);
 
         if (mDynamicUsbTether != null) {
             if (deviceSupportsUsbTether(getActivity())) {
@@ -177,7 +167,6 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
                 mDynamicTiles.removePreference(mDynamicWifi);
                 mDynamicWifi = null;
             }
-
         }
 
         // Don't show mobile data options if not supported
@@ -250,11 +239,11 @@ public class QuickSettings extends SettingsPreferenceFragment implements OnPrefe
             Settings.System.putInt(resolver, Settings.System.QS_DYNAMIC_IME,
                     mDynamicIme.isChecked() ? 1 : 0);
             return true;
-        } else if (preference == mDynamicUsbTether) {
+        } else if (mDynamicUsbTether != null && preference == mDynamicUsbTether) {
             Settings.System.putInt(resolver, Settings.System.QS_DYNAMIC_USBTETHER,
                     mDynamicUsbTether.isChecked() ? 1 : 0);
             return true;
-        } else if (preference == mDynamicWifi) {
+        } else if (mDynamicWifi != null && preference == mDynamicWifi) {
             Settings.System.putInt(resolver, Settings.System.QS_DYNAMIC_WIFI,
                     mDynamicWifi.isChecked() ? 1 : 0);
             return true;
